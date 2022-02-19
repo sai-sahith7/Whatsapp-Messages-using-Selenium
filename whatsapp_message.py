@@ -6,12 +6,12 @@ from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 import os,time
-path = "user-data-dir=C:\\Users\\sahit\\AppData\\Local\\Microsoft\\Edge\\User Data\\Whatsapp"    #path to save user data
+path = "user-data-dir=C:\\Users\\**Insert your name here (Laptop user name)**\\AppData\\Local\\Microsoft\\Edge\\User Data\\Whatsapp"    #path to save user data
 ext = webdriver.EdgeOptions()
 ext.add_argument(path)
 driver = webdriver.Edge(options=ext)
-wait = WebDriverWait(driver,10^4)
-file = open("data.txt","r")
+wait = WebDriverWait(driver,10**4)
+file = open("data.txt","r")         #reading phone numbers from a .txt file 
 wait1 = WebDriverWait(driver,1)
 phones = file.readlines()
 no_whatsapp = list()
